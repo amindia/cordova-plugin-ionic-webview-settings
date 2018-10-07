@@ -13,28 +13,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 
-public class IonicWebviewSettings extends CordovaPlugin {
+public class IonicWebViewSettings extends CordovaPlugin {
 
-    private static final String LOG_TAG = "IonicWebviewSettings";
+    private static final String LOG_TAG = "IonicWebViewSettings";
 
 
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
         
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-			try {
-				WebView view = getWebViewFromPlugin();
-	        	view.getSettings().setMediaPlaybackRequiresUserGesture(false);
-		        Log.d(LOG_TAG, "setMediaPlaybackRequiresUserGesture: FALSE");
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-		        Log.d(LOG_TAG, "setMediaPlaybackRequiresUserGesture: ERROR");
-				Log.e(LOG_TAG, "error getting settings or view: "+e.getMessage());
-			}        	
-        } else {
-	        Log.d(LOG_TAG, "setMediaPlaybackRequiresUserGesture: COULD NOT RUN");
-        }
+		try {
+			WebView view = getWebViewFromPlugin();
+			view.getSettings().setMediaPlaybackRequiresUserGesture(false);
+			Log.d(LOG_TAG, "setMediaPlaybackRequiresUserGesture: FALSE");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			Log.d(LOG_TAG, "setMediaPlaybackRequiresUserGesture: ERROR");
+			Log.e(LOG_TAG, "error getting settings or view: "+e.getMessage());
+		}        	
         
     }
     

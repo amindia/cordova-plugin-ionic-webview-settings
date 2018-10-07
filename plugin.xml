@@ -21,12 +21,12 @@
 	  <!-- android -->
 	  <platform name="android">
 	    <config-file target="res/xml/config.xml" parent="/*">
-	      <feature name="AndroidWebviewSettings">
-	        <param name="android-package" value="in.adaptivemedia.cordova.IonicWebviewSettings" onload="true" />
+	      <feature name="AndroidWebViewSettings">
+	        <param name="android-package" value="in.adaptivemedia.cordova.IonicWebViewSettings" onload="true" />
 	      </feature>
 	    </config-file>
 	    
 	
-	    <source-file src="src/android/in/adaptivemedia/cordova/IonicWebviewSettings.java" target-dir="src/in/adaptivemedia/cordova"/>
+	    <source-file src="src/android/in/adaptivemedia/cordova/IonicWebViewSettings.java" target-dir="src/in/adaptivemedia/cordova"/>
 	  </platform>
 </plugin>

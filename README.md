@@ -1,4 +1,4 @@
-Ionic Webview Settings
+Ionic WebView Settings
 =================================
 
 
