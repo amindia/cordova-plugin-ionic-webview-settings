@@ -8,5 +8,16 @@
             "android"
         ]
     },
-    "author": "KBala"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/amindia/cordova-plugin-ionic-webview-settings"
+    },
+    "author": "KBala",
+    "engines": {
+        "cordovaDependencies": {
+            "2.0.0": {
+                "cordova": ">100"
+            }
+        }
+    }
 }

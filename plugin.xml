@@ -21,7 +21,7 @@
 	  <!-- android -->
 	  <platform name="android">
 	    <config-file target="res/xml/config.xml" parent="/*">
-	      <feature name="AndroidWebViewSettings">
+	      <feature name="IonicWebViewSettings">
 	        <param name="android-package" value="in.adaptivemedia.cordova.IonicWebViewSettings" onload="true" />
 	      </feature>
 	    </config-file>
