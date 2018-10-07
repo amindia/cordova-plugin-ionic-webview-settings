@@ -34,7 +34,7 @@ public class IonicWebViewSettings extends CordovaPlugin {
         
     }
     
-    public WebView getWebViewFromPlugin() throws NoSuchMethodException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+    private WebView getWebViewFromPlugin() throws NoSuchMethodException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
     	WebView thisView = null;
 		boolean CORDOVA_4 = Integer.valueOf(CordovaWebView.CORDOVA_VERSION.split("\\.")[0]) >= 4;
 		Log.e(LOG_TAG, "CORDOVA_4: "+CORDOVA_4);
