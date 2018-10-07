@@ -1,4 +1,4 @@
-package in.adaptivemedia.cordova
+package in.adaptivemedia.cordova;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
