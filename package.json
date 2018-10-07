@@ -1,0 +1,12 @@
+{
+    "name": "cordova-plugin-ionic-webview-settings",
+    "version": "0.0.1",
+    "description": "Cordova Plugin for ionic webview settings",
+    "cordova": {
+        "id": "cordova-plugin-ionic-webview-settings",
+        "platforms": [
+            "android"
+        ]
+    },
+    "author": "KBala"
+}
